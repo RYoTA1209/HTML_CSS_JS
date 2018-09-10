@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#3 HTML CSS JS 講座</title>
+    <link href="../assets/static/css/webslides.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../assets/static/css/svg-icons.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <article id="webslides">
+        <section class="fullscreen bg-black">
+            <div class="embed dark">
+                <video autoplay muted loop class="background-video">
+                    <source src="../assets/static/videos/Code.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="wrap">
+                <p class="text-subtitle ">
+                    #3 HTML CSS JS 講座
+                </p>
+                <h1 class="text-landing">
+                    CSS入門
+                </h1>
+            </div>
+        </section>
+        <section name="ajenda" class="fullscreen">
+            <header>
+                <h1 class="text-content">AJENDA</h1>
+            </header>
+            <div class="wrap">
+                <div class="content-center">
+                    <ul class="flexblock specs">
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    CSSとは？
+                                </h2>
+                                CSSの説明
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    CSSの構文
+                                </h2>
+                                CSSの書き方を紹介します
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    CSSを使ってみよう
+                                </h2>
+                                CSSを使って簡単なスタイリングをしてみます
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <span class="background light anim" style="background-image: url('../assets/static/images/back1.jpg')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">CSSとは？</h1>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">CSS3とは?</h2>
+                    <p>
+                        CSS（Cascading Style Sheets）は、今まで組んでいたHTMLで記述されたWebページのレイアウトを指定するための言語です。
+                    </p>
+                </div>
+                <figure>
+                    <img src="../assets/static/images/CSS3_LOGO.png" alt="CSS3 LOGO" width="126">
+                </figure>
+            </div>
+        </section>
+        <section class="">
+            <!-- <div class="wrap">
+                <ul class="flexblock steps">
+                    <li>
+                        <h2 class="content-center">CSSなし</h2>
+                        <img src="../assets/static/images/Unabled_CSS.png" alt="">
+                    </li>
+                    <li>
+                        <h2 class="content-center">CSSあり</h2>
+                        <img src="../assets/static/images/enabled_css.png" alt="">
+                    </li>
+                </ul>
+                
+            </div> -->
+            <div class="wrap">
+                <div class="card-50">
+                    <figure class="">
+                        <img src="../assets/static/images/css_off.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="../assets/static/images/css_on.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <span class="background light anim" style="background-image: url('../assets/static/images/back1.jpg')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">CSSの構文</h1>
+            </div>
+        </section>
+        <section>
+            <div class="content-center">
+                <h4 class="text-apple">CSSの構文を学ぶ前にCLASS属性とID属性の話をします</h4>
+            </div>
+        </section>
+        <section class="">
+            <div class="wrap">
+                <div class="card-50">
+                    <div class="flex-content">
+                        <h4 class="text-context">CLASS属性・ID属性</h4>
+                        <p class="text-intro">
+                            class属性はHTMLの要素に「種類名」を指定することができます。一つのHTML文書に同じクラス名を何度もつかえます。
+                            <br/> 一方、id属性はHTMLの要素に「固有の名前」を指定することができます。一つのHTML文書に同じid名は一度しか使えません。
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="../assets/static/images/html_layout.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <div class="card-50">
+                    <div class="flex-content">
+                        <p class="text-intro">
+                            たとえば、class属性を指定すると、そのクラス名の要素のレイアウトをまとめて指定することができます。
+                            <br> また、javascriptで要素を指定する際class名やid名を使って特定することができるので非常に便利です。
+                        </p>
+                    </div>
+                    <figure>
+                        <img src="../assets/static/images/html_layout_colered.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="wrap">
+                <div class="content-center">
+                    <h4 class="text-apple">それではCSSの書き方を紹介します。</h4>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2 class="text-context">CSSを書く場所</h2>
+            </header>
+            <div class="wrap">
+                <div class="grid">
+                    <div class="column">
+                        <h4>1.styleタグの中に書く</h4>
+                        <pre>
+                            
+.
+.
+.
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+        &lt;style&gt;
+        .box{
+            border: 1em black;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+.
+.
+.                            
+                        </pre>
+                    </div>
+                    <div class="column">
+                        <h4>2.別ファイルに書いたCSSファイルを読み込む</h4>
+                        <pre>
+                                
+.
+.
+.
+.
+.
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+.
+.
+.
+.
+.                            
+                            </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2 class="text-context">CSSの書き方</h2>
+            </header>
+            <div class="wrap">
+                <pre>セレクタ{プロパティ名:値;}</pre>
+                <p class="text-intro">
+                    css文書は上記のようにセレクタ・プロパティ名・値で書きます。
+                    <br> セレクタはスタイルを適用する対象(要素名,id属性,class属性)のことです。
+                    <br> プロパティは適用するスタイルの種類(文字色、文字の大きさ等)のことです。
+                    <br> 一つのセレクタにプロパティ指定はいくつでもできます。
+                </p>
+            </div>
+        </section>
+        <section class="bg-black">
+            <span class="background light anim" style="background-image: url('../assets/static/images/back1.jpg')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">CSSを使ってみよう</h1>
+            </div>
+        </section>
+        <section class="">
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4>まずはstyleフォルダの中に"style.css"というファイルを作ってください。</h4>
+                </div>
+                <img src="../assets/static/images/g_css.png" style="height: 100%;" alt="">
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2 class="text-landing">body,html要素の余白(margin)を消す</h2>
+            </header>
+            <div class="wrap">
+                <pre>
+                    <code>
+                        body,html{
+                            margin:0;
+                            background: ＃F4F5F7;
+                        }
+                    </code>
+                </pre>
+                <p>
+                    bodyとhtml要素にはなぞに余白がつけられています。ほとんどのWebデザイナーは消しているので上記のようにセレクタは
+                    <br> "body,html"にしてプロパティ名は余白に関する指定を行う"margin"、値は0にしましょう。
+                    <br> 上記の例では背景色もつけています。プロパティ名は"background"で、色の指定は値で指定します。
+                    <br> 値はキーワード値（red,blueなど),16進数(#FFFFFFなど),RGB値,HSL値,特殊なキーワード値,グローバル値があります。
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2 class="text-landing">記事(article)を中央揃えに</h2>
+            </header>
+            <div class="wrap">
+                <pre>
+                        <code>
+                            article{
+                                width: 80%;
+                                margin: 0 auto;
+                            }
+                        </code>
+                    </pre>
+                <p>
+                    "width"は要素の横幅を指定できます。値を80%とすることによって親要素の横幅の80%の大きさを計算してくれます。
+                    <br> 値の単位は"%"以外にも"px"や"em"など多数あります。
+                    <br> 要素を中央揃えにしたいときは"margin: 0 auto;"と指定すると自動的に要素を中央にしてくれます。これは呪文みたいなものです。
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h2 class="text-landing">画像(img)を小さく</h2>
+            </header>
+            <div class="wrap">
+                <pre>
+                            <code>
+                                section img{
+                                    width: 50%;
+                                    display: block;
+                                    margin: 0 auto;
+                                }
+                            </code>
+                        </pre>
+                <p>
+                    section要素にあるimg要素のスタイルを指定するとき、セレクタは『親要素 子要素』のようにするとセレクタを限定することができます
+                    <br> img要素を中央にしたいのですがimgタグはインライン要素なのでデフォルトでは"margin: 0 auto;"は適用できません。
+                    <br> そこでimg要素を強制的にブロック要素に指定すると"margin:0 auto;"が指定できます。
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h3 class="text-landing">セクション見出し(.section_title)の色を変えてみる</h3>
+            </header>
+            <div class="wrap">
+                <pre>
+                                <code>
+                                    .section_title{
+                                        color:#333333;
+                                    }
+                                </code>
+                            </pre>
+                <p>
+                    セレクタにクラス名を使うときクラス名の前に".(ドット)"をつけ".クラス名"のようにします。
+                    <br> 文字色は"color"オプションで値は先ほどの背景と同じようにできます。
+                </p>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h3 class="text-landing">ナビゲーション(nav)を整える</h3>
+            </header>
+            <div class="wrap">
+                <pre>
+                                    <code>
+                                            nav{
+                                                background-color: #444;
+                                                padding: 3px;
+                                            }
+                                            
+                                            nav ul{
+                                                padding: 0;
+                                                margin: 0;
+                                            }
+                                            
+                                            nav ul li{
+                                                display: inline;
+                                                margin-right: 1em;
+                                            }
+                                            
+                                            nav ul li a{
+                                                text-decoration: none;
+                                                color: white;
+                                            }
+                                            
+                                            nav ul li a:hover{
+                                                border-bottom: dotted 1px white;
+                                            }
+                                    </code>
+                                </pre>
+                <p>
+                    スタイルを考えるのは面倒です。検索してコピーしちゃいましょう。
+                    <br> (検索してコピーするときコードの意味を理解してからコピーしましょう。そうしないと何も意味がありません。)
+                </p>
+            </div>
+        </section>
+        <section class="fullscreen bg-black">
+            <div class="embed dark">
+                <video autoplay muted loop class="background-video">
+                    <source src="../assets/static/videos/Code.mp4" type="video/mp4">
+                </video>
+            </div>
+           
+            <h1 class="content-center">
+                終
+            </h1>
+
+        </section>
+    </article>
+    <script src="../assets/static/js/webslides.min.js"></script>
+    <script src="../assets/static/js/svg-icons.js"></script>
+    <script>
+        window.ws = new WebSlides({
+            loop: false
+        });
+    </script>
+</body>
+
+</html>

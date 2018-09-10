@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#5 HTML CSS JS 講座</title>
+    <link href="../assets/static/css/webslides.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../assets/static/css/svg-icons.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+    <style>
+        .flexblock li div{
+            height: 50px;
+        }
+        .flexblock h2{
+            height: 100%;
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <article id="webslides">
+        <section class="fullscreen bg-black">
+            <div class="embed dark">
+                <video autoplay muted loop class="background-video">
+                    <source src="../assets/static/videos/Code.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="wrap">
+                <p class="text-subtitle ">
+                    #6 HTML CSS JS 講座
+                </p>
+                <h3 class="text-landing">
+                    CSS Layout
+                </h3>
+            </div>
+        </section>
+        <section class="bg-black">
+            <span class="background dark anim" style="background-image: url('https://source.unsplash.com/Y6tGu-OH8lA')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">flexbox</h1>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">flexboxとは？</h2>
+                    <p>
+                        Flexboxとは、ボックスのレイアウト方法を定めるCSS3の機能です。<br>
+                        Flexboxではボックスを横並びにしたり、右寄せ中央寄せ左寄せしたりと、様々なレイアウトを少量のコードで実現します。
+                    </p>
+                </div>
+                <figure>
+                    <img src="img/img-flexbox.png" alt="">
+                    <p></p>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">Flexboxにおけるレイアウト</h2>
+                    <p>
+                        Flexboxにおけるレイアウトは右図のように「主軸」と「交差軸」の2つの軸からなっています。
+                    </p>
+                </div>
+                <figure>
+                    <img src="img/flexbox-axis.png">
+                    <p>
+                        引用：CSSレイアウトにfloatは古い! 初心者でも始められるFlexbox入門 <br>
+                        <a href="https://ics.media/entry/13117">https://ics.media/entry/13117</a>
+                    </p>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">主軸方向の並び方</h2>
+                    <p>
+                        主軸に沿った方向の並び方は<code>justify-content</code>プロパティで設定します。
+                    </p>
+                    <img src="img/img-flexbox-code.png" alt="">
+                </div>
+                <div class="flex-content">
+                    <h4>実際にそれぞれの値を設定して確認してみよう</h4>
+                    <ul class="flexblock specs">
+                        <li>
+                            flex-start <br>
+                            終端揃え（左揃え、デフォ値）
+                        </li>
+                        <li>
+                            space-between <br>
+                            均等配置（両端ボックスは始端と終端）
+                        </li>
+                        <li>
+                            center <br>
+                            中央揃え
+                        </li>
+                        <li>
+                            space-around <br>
+                            均等配置（両端ボックスは始端、終端からボックス間隔の半分の距離）
+                        </li>
+                        <li>
+                            flex-end <br>
+                            終端揃え（右揃え）
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">交差軸方向の並び方</h2>
+                    <p>
+                        交差軸方向の並び方は<code>align-items</code>プロパティで設定します。
+                    </p>
+                </div>
+                <div class="flex-content">
+                    <h4>実際にそれぞれの値を設定して確認してみよう</h4>
+                    <ul class="flexblock specs">
+                        <li>
+                            stretch <br>
+                            親要素と同じ高さに伸びる（デフォ値）
+                        </li>
+                        <li>
+                            flex-start <br>
+                            始端揃え（上揃え）
+                        </li>
+                        <li>
+                            center <br>
+                            中央揃え
+                        </li>
+                        <li>
+                            flex-end <br>
+                            終端揃え（下揃え）
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">
+                        自分のHPをスマホ対応(レスポンシブ対応)に
+                    </h2>
+                    <p class="text-content">pcやタブレットでの3カラムカードレイアウトからスマホでは1カラムカードレイアウトに変えるにはボックスのサイズを変えることで実現できます。</p>
+                    <img src="img/img-flexible-code1.png" alt="">
+                </div>
+                <figure class="aligncenter">
+                    <img src="img/capture.png" alt="">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">メニューもフレキシブル対応</h2>
+                    <p>Flexboxはデフォルトでは横並びなので縦並びにするには<code>flex-direction</code>オプションで<code>column</code>をします。</p>
+                    <img src="img/img-flexible-code2.png" alt="">
+                </div>
+
+                <figure>
+                    <img src="img/capture.png" alt="">
+                </figure>
+            </div>
+        </section>
+    </article>
+    <script src="../assets/static/js/webslides.min.js"></script>
+    <script src="../assets/static/js/svg-icons.js"></script>
+    <script>
+        window.ws = new WebSlides({
+            loop: false
+        });
+    </script>
+</body>
+
+</html>

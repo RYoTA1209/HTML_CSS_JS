@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoge</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/anim.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/icon.png" alt="">
+        <ul>
+            <li>
+                <a href="#img" target="_blank">aaa</a>
+            </li>
+            <li>
+                <a href="bbb.html" target="_blank">bbb</a>
+            </li>
+            <li>
+                <a href="ccc.html" target="_blank">ccc</a>
+            </li>
+        </ul>
+    </header>
+    <h1 id="article_title">ベトナム</h1>
+    <article>
+        <section>
+            <h1 class="section_title">ベトナムは臭い</h1>
+            <img src="img/gomi.jpg" alt="">
+            <p>
+                ベトナムはゴミが道路に捨てられてたり、下水の匂いだったり
+                バイクの排気ガスだったり街を歩くとそこら中う〇こののにおい
+                してマジキツイ。服ににおいつくし。
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">バイク多すぎやろ</h1>
+            <img src="img/bike.jpg" alt="">
+            <p>
+                バイク大国として知られるベトナム。平日のあさとかバイク
+                多すぎて横断歩道わたるとき死ぬかと思ったわ。例えると、
+                渋谷のスクランブル交差点の人がすべてバイクに変えた感じ。
+                でも会社が休みの日曜日は一日中バイクがすくなくて出掛け
+                やすかった。
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">
+                ベトナムの食もえげつねぇ
+            </h1>
+            <img src="img/img.jpg" alt="ホビロン" id="img" />
+            <p>
+                ベトナムの食文化は日本と全然違って「こんなもんたべるの？」
+                <br /> ということがありました。写真は孵化直前のアヒルの卵。味なんか覚えてない。
+                <br /> 見た目が何よりもグロイ。一生食いたくないな。
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">
+                コンテンツ思いつかねぇ
+            </h1>
+            <img src="img/keyaki.png" alt="欅坂"" id=" img" />
+            <p>
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">
+                コンテンツ思いつかねぇ
+            </h1>
+            <img src="img/keyaki.png" alt="欅坂"" id=" img" />
+            <p>
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">
+                コンテンツ思いつかねぇ
+            </h1>
+            <img src="img/keyaki.png" alt="欅坂"" id=" img" />
+            <p>
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">
+                コンテンツ思いつかねぇ
+            </h1>
+            <img src="img/keyaki.png" alt="欅坂"" id=" img" />
+            <p>
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+            </p>
+        </section>
+        <section>
+            <h1 class="section_title">
+                コンテンツ思いつかねぇ
+            </h1>
+            <img src="img/keyaki.png" alt="欅坂"" id=" img" />
+            <p>
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+                なーこなーこなーこなーこなーこなーこなーこなーこなーこ
+            </p>
+        </section>
+    </article>
+    <footer>Copyright &copy; 2018 RYoTA All Rights Reserved.</footer>
+    <script>
+        var sections = document.getElementsByTagName("section");
+        var sections_array = Array.prototype.slice.call(sections);
+        console.log(sections_array);
+        sections_array.forEach(function (val, index, ar) {
+            console.log(val)
+            var indexNum = document.createElement("h6");
+            indexNum.innerText = "Section:" + index;
+            sections[index].appendChild(indexNum);
+        });
+    </script>
+</body>
+
+</html>

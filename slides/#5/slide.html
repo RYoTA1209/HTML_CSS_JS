@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#5 HTML CSS JS 講座</title>
+    <link href="../assets/static/css/webslides.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../assets/static/css/svg-icons.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+    <article id="webslides">
+        <section class="fullscreen bg-black">
+            <div class="embed dark">
+                <video autoplay muted loop class="background-video">
+                    <source src="../assets/static/videos/Code.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="wrap">
+                <p class="text-subtitle ">
+                    #5 HTML CSS JS 講座
+                </p>
+                <h3 class="text-landing">
+                    Styling boxes
+                </h3>
+            </div>
+        </section>
+        <section name="ajenda" class="fullscreen">
+            <header>
+                <h1 class="text-content">AJENDA</h1>
+            </header>
+            <div class="wrap">
+                <div class="content-center">
+                    <ul class="flexblock specs">
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    ボックスモデルの要約
+                                </h2>
+                                ボックスモデルの基本的な内容を学んでいきます。
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    背景を変更する
+                                </h2>
+                                cssのプロパティを使って背景を変える方法を学んでいきます。
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    枠線をつける
+                                </h2>
+                                cssのプロパティを使って枠線を付ける方法を学んでいきます。
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <span class="background dark anim" style="background-image: url('https://source.unsplash.com/Y6tGu-OH8lA')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">ボックスモデルの要約</h1>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">ボックスモデルの構造</h2>
+                    <p>
+                        ボックスモデルは右の図のような構造になっています。一つ注意が必要なのは、幅と高さにはデフォルトではmargin,borer,paddingは含まれないということです。
+                    </p>
+                </div>
+                <figure>
+                    <img src="img/box-model-standard-small.png">
+                    <p>source:MDZ web docs Box model recap
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap">https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap</a>
+                    </p>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">img要素の高さと幅を変えよう</h4>
+                    <p>
+                        高さは"height"プロパティ、幅は"width"プロパティで指定できます。ｃｓｓ初回で画像を親要素(section要素)の50%の大きさになる様にしてあります。<br>
+                        この見た目だと大きすぎるので数値を小さくしてみましょう。右の例はサイズを20%にしました。ただこの20%にしてスマホで表示させてみると実は表示が見にくくなります。
+                    </p>
+                    <img src="img/img_size1_code.png" alt="">
+                </div>
+                <figure>
+                    <img src="img/img_size1.png">
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">img要素の高さと幅を変えよう</h4>
+                    <p>
+                        高さは"height"プロパティ、幅は"width"プロパティで指定できます。ｃｓｓ初回で画像を親要素(section要素)の50%の大きさになる様にしてあります。<br>
+                        この見た目だと大きすぎるので数値を小さくしてみましょう。右の例はサイズを20%にしました。ただこの20%にしてスマホで表示させてみると実は表示が見にくくなります。
+                    </p>
+                    <img src="img/img_size1_code.png" alt="">
+                </div>
+                <figure>
+                    <img src="img/img_size2.png" style="height:731px;">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">img要素の大きさの制限を付けよう</h4>
+                    <p>
+                        横幅でサイズを変えられるようにしているとスマホなどの横幅が短い端末だと見にくくなります。なので大きさに制限を付けましょう。大きさの下限値を指定するには"min-width"があります。
+                    </p>
+                    <img src="img/img_size2_code.png" alt="" style="">
+                </div>
+                <figure>
+                    <img src="img/img_size3.png" style="height:731px;">
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">画像の枠を付ける</h4>
+                    <p>
+                        <code>border-width</code>で枠線の太さ[数値 | キーワード(thin | medium | thick)] <br>
+                        <code>border-style</code>で枠線のスタイル[キーワード(none | hidden | dotted | dashed | solid | double |
+                        groove | ridge | inset | outset)]<br>
+                        <code>border-color</code>で枠線の色[color]を指定できます。<br>
+                        <br>
+                        以上の三つをまとめて<code>border:[width] [style] [color];</code>のように書くこともできます。
+                    </p>
+                    <img src="img/img_border_code.png" alt="" style="">
+                </div>
+                <figure>
+                    <img src="img/img_border.png" style="">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">sectionの段落にインデントを付けよう</h4>
+                    <p>
+                        <code>padding</code>プロパティで要素の枠線の内側に余白を付けることができます。
+                        <code>padding-left</code>のようにすると一辺だけに余白を指定できます。
+                    </p>
+                    <img src="img/img_padding_code.png" alt="" style="">
+                </div>
+                <figure>
+                    <img src="img/img_padding.png">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">boxのサイズの計測の仕方を変えたいとき</h4>
+                    <p>
+                        最初に高さと幅にはデフォルトではmargin,border,paddingは含まれないと説明しましたが、borderとpaddingを含んで大きさを考えたほうがやりやすい時もあると思います。
+                        <br>その時boxサイズの計測の仕方を変更する<code>box-sizing</code>プロパティが便利です。
+                    </p>
+                </div>
+                <figure>
+                    <img src="img/box-model-alt-small.png">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">boxのサイズの計測の仕方を変えたいとき</h4><br>
+                    HTML
+                    <img src="img/img-sizing-html.png" alt="">
+                    CSS
+                    <img src="img/box-sizing-css.png" alt="">
+                </div>
+                <figure>
+                    <img src="img/img_sizing.png" style="height:712px;">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-landing">displayとは</h4>
+                    <p>displayは要素の表示形式を決めるものです。値はいくつかありますが、今回は重要なもの4つを扱っていきます。</p>
+                    <p>覚えておくべきものは次のものです</p>
+                    <ul>
+                        <li>block（p,div,ul,h1~h6...）</li>
+                        <li>inline（a,span,img...）</li>
+                        <li>inline-block</li>
+                        <li>none</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h4 class="text-langing">display:block;</h4>
+                    <p>block要素は要素が横までいっぱいに広がり、縦に並んでいきます。要素の前後には改行が入り、width,height,四方のmargin,paddingを自由に指定できます。</p>
+                </div>
+                <figure>
+                    <img src="img/img-block.png" alt="">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div></div>
+        </section>
+    </article>
+    <script src="../assets/static/js/webslides.min.js"></script>
+    <script src="../assets/static/js/svg-icons.js"></script>
+    <script>
+        window.ws = new WebSlides({
+            loop: false
+        });
+    </script>
+</body>
+
+</html>

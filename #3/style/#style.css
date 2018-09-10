@@ -1,0 +1,40 @@
+body,html{
+    margin: 0;
+    background: ＃F4F5F7;
+}
+nav{
+    background-color: #444;
+    padding: 3px;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    border-bottom: dotted 1px white;
+}
+
+article{
+    width: 80%;
+    margin: 0 auto;
+}
+section img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.section_title{
+    color: #333333;
+}

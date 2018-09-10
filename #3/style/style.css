@@ -1,0 +1,53 @@
+body,
+html {
+    /* プロパティ名:値; */
+    margin: 0;
+    /*background: #F4F5F7;*/
+    background: (255, 255, 255);
+}
+
+article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*子孫セレクタ*/
+
+section img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.setction_title {
+    color: greenyellow;
+}
+
+#nav{
+    background-color: #444;	
+    padding: 3px;	
+} 
+
+
+#nav ul{
+    padding: 0px; 	
+    margin: 0px;
+} 
+
+
+#nav ul li {
+    display: inline; 	
+    margin-right: 1em;
+} 
+
+
+#nav ul li a { 
+    font-family: "Trebuchet MS", sans-serif; 
+    text-decoration: none;
+    color: #fff; 	 
+} 
+
+
+#nav ul li a:hover{ 
+    border-bottom: dotted 1px #fff;	 
+}

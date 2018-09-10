@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>#4 HTML CSS JS 講座</title>
+    <link href="../assets/static/css/webslides.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../assets/static/css/svg-icons.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet">
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+    <article id="webslides">
+        <section class="fullscreen bg-black">
+            <div class="embed dark">
+                <video autoplay muted loop class="background-video">
+                    <source src="../assets/static/videos/Code.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="wrap">
+                <p class="text-subtitle ">
+                    #4 HTML CSS JS 講座
+                </p>
+                <h3 class="text-landing">
+                    CSS Fundamental text and font styling
+                </h3>
+            </div>
+        </section>
+        <section name="ajenda" class="fullscreen">
+            <header>
+                <h1 class="text-content">AJENDA</h1>
+            </header>
+            <div class="wrap">
+                <div class="content-center">
+                    <ul class="flexblock specs">
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    基本的な文字と字体の装飾
+                                </h2>
+                                文字の大きさだったり色、フォントの指定の仕方を学んでいきます。
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <h2>
+                                    <svg class="fas fa-caret-right" viewbox="0 0 512 512">
+                                        <use xlink:href="#fa-caret-right"></use>
+                                    </svg>
+                                    Webフォントについて
+                                </h2>
+                                webに公開されているフォントの使い方を学んでいきます。
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <span class="background dark anim" style="background-image: url('https://source.unsplash.com/Y6tGu-OH8lA')"></span>
+            <div class="wrap">
+                <h1 class="text-landing">基本的な文字と字体の装飾</h1>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">Color</h2>
+                    <p>
+                        colorプロパティは文字色の色をつけることができます。通常は文字の色ですが、<code>text-decoration</code>による下線や上線などにも適用されます。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p{
+    color:red;
+}
+
+</code></pre>
+                </div>
+                <figure>
+                    <img src="img/color_property.png" alt="color_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">Font families</h2>
+                    <p>
+                        <code>font-family</code>プロパティはテキストの字体を設定することができます。閲覧しているPCにそのフォントがあればプロパティは適用されますが、ない場合ブラウザのデフォルトのフォントが使われます。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p{
+    font-family: serif;
+}
+</code></pre>
+                </div>
+                <figure>
+                    <img src="img/font-family_property.png" alt="font-family_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">複数のフォントを指定する</h2>
+                    <p>
+                        複数のフォントを指定するときフォント同士の間を<code>,</code>で区切ります。フォントを複数指定する理由は、OSによってインストールされているOSが異なるためです。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p{
+    font-family: "MS PGothic", "Osaka", Arial, sans-serif;
+}
+</code></pre>
+                </div>
+                <figure>
+                    <img src="img/font-family_property.png" alt="font-family_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">Font size</h2>
+                    <p>
+                        <code>font-size</code>プロパティの前に、文字サイズの単位について学んでいきます。
+                    </p>
+                </div>
+            </div>
+            <div class="flex-content right">
+                <ul class="flexblock specs">
+                    <li>
+                        px 絶対的な単位
+                    </li>
+                    <li>
+                        em 親要素に対して相対的な単位
+                    </li>
+                    <li>
+                        rem root(html)のフォントサイズに対する相対的な単位
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">font-style</h2>
+                    <p>
+                        <code>font-style</code>プロパティはフォントをイタリック調や斜体にするものです。日本語ではイタリック調と斜体は適用できないフォントがほとんどです。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+footer {
+    font-style:italic;
+}
+</code></pre>
+                </div>
+                <figure>
+                    <img src="img/font-style.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">font-weight</h2>
+                    <p>
+                        <code>font-weight</code>により、文字の太さを指定できます。このプロパティは多くの値があります(-light,-normal･･･,lighter,bolder,100-900)
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p {
+    font-weight:600;
+}
+    </code></pre>
+                </div>
+                <figure>
+                    <img src="img/font-weight.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">text-transform</h2>
+                    <p>
+                        <code>text-transform</code>は日本語には関係ありません。英字などを大文字・小文字・全角文字への変換を指定できます。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+footer {
+    text-transform: lowercase;
+}
+    </code></pre>
+                </div>
+                <figure>
+                    <img src="img/text-transform.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">text-decoration</h2>
+                    <p>
+                        <code>text-transform</code>は下線、上線、取り消し線を指定できます。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p {
+    text-decoration:line-through;
+}
+        </code></pre>
+                </div>
+                <figure>
+                    <img src="img/font-decoration.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">Text alignment</h2>
+                    <p>
+                        <code>text-align</code>プロパティは文字の位置を指定できます。値はleft,right,cnter,justifyの4つです。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section {
+    text-align: center;
+}
+            </code></pre>
+                </div>
+                <figure>
+                    <img src="img/text-align.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">Line height</h2>
+                    <p>
+                        <code>line-height</code>プロパティは行間を指定できます。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p{
+    line-height: 3;
+}
+                </code></pre>
+                </div>
+                <figure>
+                    <img src="img/line-height.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+            <div class="card-50">
+                <div class="flex-content">
+                    <h2 class="text-landing">letter spacing</h2>
+                    <p>
+                        <code>letter-spacing</code>プロパティは文字間を指定できます。
+                    </p>
+                    <pre><code class="prettyprint lang-css">
+section p{
+    letter-spacing: 10px;
+}
+                    </code></pre>
+                </div>
+                <figure>
+                    <img src="img/letter-spacing.png" alt="font-size_property">
+                </figure>
+            </div>
+        </section>
+        <section>
+                <div class="card-50">
+                    <div class="flex-content">
+                        <h2 class="text-landing">Word spacing</h2>
+                        <p>
+                            <code>word-spacing</code>プロパティは単語の間隔を指定できます。単語の間隔にはマイナスの値も指定できます。
+                        </p>
+                        <pre><code class="prettyprint lang-css">
+footer{
+    word-spacing: 100px;
+}
+                            </code></pre>
+                    </div>
+                    <figure>
+                        <img src="img/word-spacing.png" alt="font-size_property">
+                    </figure>
+                </div>
+            </section>
+            <section>
+                    <div class="card-50">
+                        <div class="flex-content">
+                            <h3 class="text-landing">今までのをまとめて...</h3>
+                            <p>
+                                <code>font</code>プロパティでいままでの{font-style,font-variant,font-weight},font-size,font-height,font-familyをまとめて指定できます。
+                            </p>
+                            <pre><code class="prettyprint lang-css">
+font{
+    font: normal 16pt serif;
+}
+                                </code></pre>
+                        </div>
+                        <figure>
+                            <img src="img/font.png" alt="font-size_property">
+                        </figure>
+                    </div>
+                </section>
+                <section class="bg-black">
+                        <span class="background dark anim" style="background-image: url('https://source.unsplash.com/Y6tGu-OH8lA')"></span>
+                        <div class="wrap">
+                            <h1 class="text-landing">Webフォントについて</h1>
+                        </div>
+                </section>
+                <section>
+                    
+                </section>
+    </article>
+    <script src="../assets/static/js/webslides.min.js"></script>
+    <script src="../assets/static/js/svg-icons.js"></script>
+    <script>
+        window.ws = new WebSlides({
+            loop: false
+        });
+    </script>
+</body>
+
+</html>
